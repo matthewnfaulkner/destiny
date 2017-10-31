@@ -1,0 +1,105 @@
+.cube{
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  border-color: #00FFF3;
+  border-style: solid;
+  border-width: thin;
+}
+.cube.active{
+  -webkit-animation: glow 1s infinite linear;
+}
+@-webkit-keyframes glow {
+  25% {border-color: #93FFFA;}
+  50% {border-color: #C4FFFC;}
+  100% {border-color: #00FFF3;}
+}
+.main-container{
+  width: 100%;
+  height: 800px;
+}
+
+.tool-bar{
+  height: 100px;
+  width: 450px;
+  background-color: #AC88F9;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 25px 25px 25px 25px;
+}
+
+.tools{
+  height: 100%;
+}
+
+.tool{
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.tool.active{
+  background-color: red;
+}
+.tool:hover{
+  background-color: blue;
+  cursor: pointer;
+}
+
+.subtoolbar{
+  width: 100%;
+  height: 50px;
+}
+
+.subtool{
+  border-radius: 5px;
+  width: 50px;
+  height: 50px;
+}
+.subtool:hover{
+  cursor: pointer;
+}
+
+.twitchstream{
+  width:800px;
+  height: 400px;
+  background-color: grey;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.3;
+  text-align: center;
+}
+.twitchstream.active{
+  opacity: 1;
+}
+.confirm{
+
+  height: 60px;
+  background-color: #AC88F9;
+  display: block;
+  position: absolute;
+  left: 80%;
+  top: 5%;
+  border-radius: 5px;
+  font-family: arial;
+  display: none;
+}
+.confirm.active{
+  display: block;
+}
+.confirmbut{
+  padding-left: 5px;
+  border-radius: 5px;
+  width: 100px;
+  height: 20px;
+}
+.confirmbut.active{
+  background-color: red;
+}
+.confirmbut:hover{
+  background-color: blue;
+  cursor: pointer;
+}
